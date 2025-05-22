@@ -385,3 +385,33 @@
     left: auto;
     right: 5px;
   }
+  
+  @media (max-width: 768px) {
+  .cont {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 10px;
+  }
+
+  .el {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .el__bg {
+    height: 200px;
+  }
+
+  .el__text {
+    padding: 15px;
+    font-size: 14px;
+  }
+
+  .el__title {
+    font-size: 20px;
+  }
+
+  .el__subtitle {
+    font-size: 14px;
+  }
+}
