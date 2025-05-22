@@ -385,22 +385,48 @@
     left: auto;
     right: 5px;
   }
-  
+
   @media (max-width: 768px) {
   .cont {
     flex-direction: column;
-    align-items: center;
-    padding: 60px 10px;
+    height: auto;
+    padding: 20px 10px;
   }
 
   .el {
+    position: static;
     width: 90%;
-    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    transform: none;
+    opacity: 1;
   }
 
-  .el__bg {
+  .el__inner, .el__bg {
     height: 200px;
   }
+
+  .el__index {
+    font-size: 10vw;
+    position: static;
+  }
+
+  .el__content {
+    position: static;
+    padding: 20px;
+  }
+
+  .el__preview-cont {
+    position: static;
+    padding: 10px;
+  }
+
+  .el__close-btn {
+    top: 5px;
+    right: 5px;
+  }
+}
 
   .el__text {
     padding: 15px;
@@ -414,4 +440,3 @@
   .el__subtitle {
     font-size: 14px;
   }
-}
