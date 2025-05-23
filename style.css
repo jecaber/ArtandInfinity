@@ -142,6 +142,26 @@
     color: #fff;
     -webkit-text-stroke: 1px #1f1f1f;
   }
+
+  .el__side-text {
+    position: relative;
+    left: 100%;
+    right: 0;
+    top: 0;
+    transform: translateY(-100%);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+    z-index: 10;
+    margin-left: 100px;
+  }
+
+  .el.s--active .el__side-text {
+    opacity: 1;
+   pointer-events: auto;
+  }
+  
   .el__close-btn {
     z-index: -1;
     position: absolute;
@@ -386,57 +406,51 @@
     right: 5px;
   }
 
-  @media (max-width: 768px) {
-  .cont {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vw;
-    padding: 20px 10px;
-  }
+  .navbar {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 20px;
+}
 
-  .el {
-    position: static;
-    width: 90%;
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 30px;
-  }
+.nav-btn {
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: #90caf9;
+}
+
+ h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 90px;
+}
+
+  h3 {
+   color: white;
+  text-align: center;
+  font-family: 'Bebas Neue', cursive, sans-serif;
+  font-size: 40px;
+}
   
-  .el__bg{
-  width: 100%;
-  }
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #ffe08a;
+}
 
-  .el__inner, .el__bg {
-    height: 200px;
-  }
-
-  .el__index {
-    font-size: 10vw;
-    position: static;
-  }
-
-  .el__content {
-    position: static;
-    padding: 20px;
-  }
-
-  .el__preview-cont {
-    position: static;
-    padding: 10px;
-  }
-
-  .el__close-btn {
-    top: 5px;
-    right: 5px;
-  }
-  
-  .el__text,
-  .el__heading,
-  .el__index-overlay:before {
-    color: #fff;
-    z-index: 3;
-    opacity: 1;
-  }
+h5 {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.6;
+  color: #f0f0f0; 
+  margin-bottom: 16px;
 }
